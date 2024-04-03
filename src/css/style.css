@@ -1,0 +1,48 @@
+/* Nombre: Santiago Pineda Tobon
+Clan: Dell
+Fecha: 04/03/2024 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+:root{
+    --verdeBosque: #1A5126;
+    --verdeClaro: #8FBF5F;
+    --azulClaro: #5CB3FF;
+    --beige: #F3E9DC;
+    --marronTierra: #B18F6A;
+    --blanco: #ffffff;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background-color: var(--verdeBosque);
+    color: var(--blanco);
+}
+
+#nav{
+    display: flex;
+}
+
+
+.anchor{
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+#img1{
+    background-image:url(../../public/img/imagen1.webp);
+    background-size: cover;
+}
