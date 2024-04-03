@@ -8,6 +8,7 @@ Fecha: 04/03/2024 */
     padding: 0;
     box-sizing: border-box;
     font-family: Montserrat;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -22,6 +23,9 @@ Fecha: 04/03/2024 */
 #header{
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
     padding: 15px 50px;
     background-color: var(--verdeBosque);
     color: var(--blanco);
@@ -42,7 +46,130 @@ Fecha: 04/03/2024 */
     text-decoration: none;
 }
 
-#img1{
-    background-image:url(../../public/img/imagen1.webp);
+#main{
+    background-color: var(--beige);
+}
+/* esta seccion lo que hace es poner la imagen de fondo  */
+#section1{
+    height: 400px;
+    background-image:url(../../public/img/imagen1.webp);  
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
+}
+
+#descripcion{
+    color: var(--blanco);
+    font-weight: 1000;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 100px;
+    left: 500px;
+    height: 200px;
+    width: 1000px;
+
+}
+
+#section2{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#parque{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap:15px
+}
+
+.div-parque{
+    display: flex;
+}
+
+#imagenes{
+    margin-left: 70px;
+    width: 80%;
+}
+
+.img-grande{
+    height: 450px;
+    width: 99%;
+    border-radius: 10px;
+}
+
+.img-peque{
+    height: 300px;
+    width: 49%;
+    border-radius: 5px;
+    margin-right: 10px;
+
+}
+
+.verde{
+    color: var(--verdeBosque);
+}
+
+#normas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 30px 200px;
+
+}
+
+#cont-normas{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    width: 27.6%;
+    border: 1px solid var(--verdeClaro);
+    background-color: var(--verdeClaro);
+    border-radius: 100px;
+    margin-bottom: 50px;
+}
+
+.blanco{
+    color: var(--blanco);
+    font-weight: 500;
+    font-size:20px;
+    margin-top: 15px;
+}
+
+#footer{
+    background-color: var(--verdeBosque);
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#img-alc{
+    height: 100px;
+}
+
+#div-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+#iconos{
+    display: flex;
+    justify-content: space-around;
 }
